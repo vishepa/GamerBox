@@ -4,12 +4,14 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "ingest:apps": "node scripts/ingest-apps.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "ws": "^8.21.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
